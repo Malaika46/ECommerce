@@ -1,0 +1,99 @@
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #252a50;
+    padding: 40px 20px;
+}
+
+.head1 {
+    color: rgb(34, 55, 90);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    font-family: arial;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: oblique;
+    font-variant: small-caps;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    place-items: center;
+    background: #252a50;
+    width: min(700px, 95%);
+    border-radius: 20px;
+}
+
+.left-side {
+    height: 655px;
+    width: 400px;
+    background-image: url(t.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+    border-radius: 30px 0 0 20px;
+}
+
+.right-side {
+    padding: 70px;
+    height:655px;
+    width: 350px;
+    background-image: url(k.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #0c0c0c;
+    outline: 0;
+    border-radius: 5px;
+    margin: 4px 0 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+input:focus {
+    border: 1px solid #0a0a0a;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #070707;
+    transition: background-color 5000ms ease-in-out 0s;
+}
+
+label {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
